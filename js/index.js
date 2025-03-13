@@ -1,5 +1,5 @@
 import { tweetsData } from './data.js'
-import {v4 as uuidv4} from 'https://jspm.dev/uuid';
+import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 
 document.addEventListener('click', function (e) {
@@ -65,7 +65,7 @@ function handleTweetBtnClick() {
             isLiked: false,
             isRetweeted: false,
             uuid: uuidv4()
-        },)
+        })
         render()
         tweetInput.value = ''
     }
